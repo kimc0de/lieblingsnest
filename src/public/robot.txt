@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemaps: https://lieblingsnest.net/sitemap.xml

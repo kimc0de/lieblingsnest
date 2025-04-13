@@ -104,6 +104,9 @@ dist
 .temp
 .cache
 
+.DS_Store
+.idea
+
 # vitepress build output
 **/.vitepress/dist
 

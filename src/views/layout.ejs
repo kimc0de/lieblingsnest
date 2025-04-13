@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <title><%- title %></title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lieblingsnest Detmold - Haus zur Miete in Detmold">
+    <meta name="author" content="www.lieblingsnest.net, lieblingsnest.net, Karsten Diekmann">
+    <meta name="publisher" content="www.lieblingsnest.net, lieblingsnest.net, Karsten Diekmann">
+    <meta name="expires" content="never">
+    <meta name="page-topic" content="Lieblingsnest Detmold - Haus zur Miete in Detmold">
+    <meta name="page-type" content="Ferienhaus Webseite">
+    <meta name="audience" content="Alle">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="10 days">
+    <meta name="language" content="de">
+
+<!--    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+    <link rel="manifest" href="/manifest.json">
+
+    <%# Bootstrap style sheet %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <%# Font %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Nanum+Gothic&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <%# Font Awesome / Icons %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <%# custom style sheets - link here to overwrite bootstrap %>
+    <!--    <link href="/css/index.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/header.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/footer.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/home.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/services.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/static.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/contact.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/thank.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="/css/error.css" rel="stylesheet" type="text/css" />-->
+
+    <!-- Google tag (gtag.js) -->
+    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXLDSZRMEZ"></script>-->
+    <!--    <script>-->
+    <!--      window.dataLayer = window.dataLayer || [];-->
+    <!--      function gtag(){dataLayer.push(arguments);}-->
+    <!--      gtag('js', new Date());-->
+
+    <!--      gtag('config', 'G-RXLDSZRMEZ');-->
+    <!--    </script>-->
+    <!--    &lt;!&ndash; Schema markup &ndash;&gt;-->
+    <!--    <script type="application/ld+json">-->
+    <!--        {-->
+    <!--            "@context": "https://schema.org",-->
+    <!--            "@type": "LocalBusiness",-->
+    <!--            "name": "Diekmann Energieberatung",-->
+    <!--            "image": "https://energie-beratung.online/images/homepage/logo2.svg",-->
+    <!--            "@id": "",-->
+    <!--            "url": "https://energie-beratung.online",-->
+    <!--            "telephone": "+4917647045777",-->
+    <!--            "address": {-->
+    <!--                "@type": "PostalAddress",-->
+    <!--                "streetAddress": "Woldemarstraße",-->
+    <!--                "addressLocality": "Detmold",-->
+    <!--                "postalCode": "32756",-->
+    <!--                "addressCountry": "DE"-->
+    <!--            },-->
+    <!--            "geo": {-->
+    <!--                "@type": "GeoCoordinates",-->
+    <!--                "latitude": 51.9352558187584,-->
+    <!--                "longitude": 8.88870869832631-->
+    <!--            }-->
+    <!--        }-->
+    <!--    </script>-->
+    <!--    <script type="application/ld+json">-->
+    <!--        {-->
+    <!--            "@context": "https://schema.org/",-->
+    <!--            "@type": "BreadcrumbList",-->
+    <!--            "itemListElement": [{-->
+    <!--                "@type": "ListItem",-->
+    <!--                "position": 1,-->
+    <!--                "name": "Home",-->
+    <!--                "item": "https://enegie-beratung.online"-->
+    <!--            },{-->
+    <!--                "@type": "ListItem",-->
+    <!--                "position": 2,-->
+    <!--                "name": "Energieberatung",-->
+    <!--                "item": "https://enegie-beratung.online/dienstleistungen/energieberatung"-->
+    <!--            },{-->
+    <!--                "@type": "ListItem",-->
+    <!--                "position": 3,-->
+    <!--                "name": "Energieausweis",-->
+    <!--                "item": "https://enegie-beratung.online/dienstleistungen/energieausweis"-->
+    <!--            },{-->
+    <!--                "@type": "ListItem",-->
+    <!--                "position": 4,-->
+    <!--                "name": "Individueller Sanierungsfahrplan",-->
+    <!--                "item": "https://energie-beratung.online/dienstleistungen/isfp"-->
+    <!--            },{-->
+    <!--                "@type": "ListItem",-->
+    <!--                "position": 5,-->
+    <!--                "name": "Kontakt",-->
+    <!--                "item": "https://energie-beratung.online/kontakt"-->
+    <!--            }]-->
+    <!--        }-->
+    <!--    </script>-->
+</head>
+
+<body>
+
+<!-- Content -->
+<div class="root">
+    <%- include('./partials/header.ejs') %>
+    <main id="main"><%- body %></main>
+    <%- include('./partials/footer.ejs') %>
+</div>
+
+<!-- Bootstrap Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Custom JS-->
+<script src="/javascripts/header.js"></script>
+<!--<script src="/javascripts/contact.js"></script>-->
+</body>
+
+</html>

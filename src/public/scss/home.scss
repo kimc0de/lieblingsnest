@@ -1,15 +1,17 @@
-.carousel-images {
+#homepage .carousel-images {
+    display: block;
+    max-height: 20rem;
     width: 100%;
-    height: 20rem;
-    object-fit: fill;
+    height: auto;
+    object-fit: cover;
     object-position: center;
 
     @media (min-width: 1024px) {
-        height: 35rem;
+        max-height: 35rem;
     }
 }
 
-.section1-image {
+#homepage  .section1-image {
     display: block;
     max-width: 43rem;
     max-height: 31rem;
@@ -17,7 +19,7 @@
     height: auto;
 }
 
-.section2-image {
+#homepage .section2-image {
     display: block;
     max-height: 13rem;
     width: 100%;
@@ -26,7 +28,7 @@
     object-position: center;
 }
 
-.section3-image{
+#homepage .section3-image{
     display: block;
     min-height: 20rem;
     max-height: 20rem;
@@ -36,7 +38,7 @@
     object-position: center;
 }
 
-.section4-image {
+#homepage .section4-image {
     max-width: 24rem;
     max-height: 20rem;
     width: 100%;

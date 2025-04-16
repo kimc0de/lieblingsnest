@@ -70,6 +70,13 @@ router.get('/partner', (req, res) => {
   });
 });
 
+router.get('/danke', (req, res) => {
+  res.render('thanks', {
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+  });
+});
+
 router.get ('/sitemap.xml', function(req, res) {
   res.sendFile('sitemap.xml', {root: './public'});
 })

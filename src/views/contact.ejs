@@ -1,3 +1,66 @@
-<div>
-    Contact
+<div class="my-4">
+    <div class="contact-form">
+        <h2 id="contact-form-title" class="my-4 text-center">Kontaktformular</h2>
+        <form aria-labelledby="contact-form-title" action="https://formsubmit.co/theprettykim@gmail.com" method="POST" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="name" class="form-label fw-bold">Name <span class="asterisk">*</span></label>
+                <input type="text" name="name" class="form-control" id="name" required>
+                <div class="invalid-feedback">
+                    Bitte Ihr Name eingeben.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label fw-bold">Email <span class="asterisk">*</span></label>
+                <input type="email" name="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Bitte Ihre Email eingeben./ Please enter your email address.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="tel" class="form-label fw-bold">Tel.nr./ Tel no.</label>
+                <input type="number" name="telefon" class="form-control" id="tel" required>
+                <div class="invalid-feedback">
+                    Bitte Ihre Telefonnummer eingeben./ Please enter your phone number.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="address" class="form-label fw-bold">Addresse/Address</label>
+                <input type="text" name="adress" class="form-control" id="address">
+            </div>
+            <div class="col-md-6">
+                <label for="city" class="form-label fw-bold">Stadt/City</label>
+                <input type="text" name="city" class="form-control" id="city">
+            </div>
+
+            <div class="col-12">
+                <label for="guest" class="form-label fw-bold">Anzahl Personen/ Number of guests <span class="asterisk">*</span></label>
+                <input type="text" name="telefon" class="form-control" id="guest" required>
+                <div class="invalid-feedback">
+                    Bitte die Anzahl der Personen eingeben./ Please enter the number of guests.
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="bedroom" class="form-label fw-bold">Anzahl Schlafzimmer/Number of bedrooms <span class="asterisk">*</span></label>
+                <input type="text" name="bedroom" class="form-control" id="bedroom" required>
+                <div class="invalid-feedback">
+                    Bitte die Anzahl der Schlafzimmer eingeben./ Please enter the number of needed bedrooms.
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label fw-bold">Nachricht <span class="asterisk">*</span></label>
+                <textarea class="form-control" id="message" name="Nachricht" required></textarea>
+                <div class="invalid-feedback">
+                    Bitte eine Nachricht schreiben./ Please write a message.
+                </div>
+            </div>
+
+            <input type="hidden" name="_next" value="https://lieblingsnest.net/danke" aria-hidden="true" tabindex="-1">
+            <input type="hidden" name="_subject" value="Neu kontakt!" aria-hidden="true" tabindex="-1">
+            <input type="hidden" name="_autoresponse" value="Vielen Dank für Ihre Nachricht!" aria-hidden="true" tabindex="-1">
+
+            <div class="col-12 text-center">
+                <button class="send btn btn-primary g-recaptcha" type="submit">Senden</button>
+            </div>
+        </form>
+    </div>
 </div>

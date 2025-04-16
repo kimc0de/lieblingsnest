@@ -1,3 +1,50 @@
-<div>
-    Error
+<div class="container mt-4" id="error-page">
+    <div class="justify-content-center text-center" id="error-body">
+        <div id="error-bottom">
+            <!-- Error message -->
+            <% if (!errorCode && !errorMessage) { %>
+                <h1 id="error-title" class="fs-4">Error</h1>
+                <div class="mb-2 mt-2">Etwas ist schiefgegangen. Bitte versuchen Sie es später erneut!</div>
+            <% } else { %>
+            <h1 id="error-title">Error <%=errorCode%></h1>
+            <% if (errorCode === 404) { %>
+                <div class="fw-bold page-not-found">Page Not Found</div>
+            <% } %>
+            <div class="mt-4"><%=errorMessage%></div>
+            <% } %>
+
+            <!-- Action buttons -->
+            <div class="action-buttons d-flex flex-row justify-content-center">
+                <a href="/" class="ms-4 me-4">
+                    Zur Startseite gehen
+                </a>
+                <a href="/kontakt" class="ms-4 me-4">
+                    Ein Problem melden
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--  Extra instruction for 404 error page-->
+    <% if (errorCode === 404) { %>
+        <div class="d-flex flex-column align-items-start ps-1 pe-1 ps-lg-5 pe-lg-5 mt-4 mb-2">
+            <h2 class="mt-3 fs-4">Warum kann diese Seite nicht gefunden werden?</h2>
+            <ul>
+                <li class="mt-2">Diese Seite wurde möglicherweise gelöscht oder verschoben.</li>
+                <li class="mt-2">Diese Seite hat nie existiert.</li>
+                <li class="mt-2">Die URL war fehlerhaft.</li>
+                <li class="mt-2">Die URL wurde falsch geschrieben.</li>
+            </ul>
+
+            <h2 class="mt-3 fs-4">Versuchen Sie, Ihre Rechtschreibung zu überprüfen</h2>
+            <div class="text-start mt-2 mb-2">Bitte stellen Sie sicher, dass die URL richtig geschrieben ist.</div>
+
+            <h2 class="mt-3 fs-4">Probieren Sie die Startseite aus</h2>
+            <div class="text-start mt-2 mb-2">Sie können die <span><a href="/">Startseite</a></span> besuchen, um zu sehen, was wir anbieten.</div>
+
+            <h2 class="mt-3 fs-4">Wenn Sie weitere Hilfe benötigen</h2>
+            <div>Kontaktieren Sie uns über den folgenden Link, wenn Sie weitere Hilfe benötigen. <span><a href="/kontakt">Zur Kontaktseite gehen</a></span></div>
+        </div>
+    <% } %>
 </div>
+

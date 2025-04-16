@@ -1,3 +1,22 @@
 #header {
   background-color: white !important;
 }
+
+#header .name {
+  font-size: 1rem;
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+#header .logo-image {
+  max-height: 3rem;
+
+  @media (min-width: 1024px) {
+    max-width: 20rem;
+    max-height: 20rem;
+    width: auto;
+    height: auto;
+  }
+}

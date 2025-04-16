@@ -1,0 +1,28 @@
+.area-image {
+  display: block;
+  max-height: 325px;
+  max-width: 450px;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+
+  @media (min-width: 1024px) {
+    max-height: 25rem;
+  }
+}
+
+.area-2-image {
+    display: block;
+    max-height: 300px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+
+    @media (min-width: 1024px) {
+        max-height: 20rem;
+        max-width: 15rem;
+    }
+}

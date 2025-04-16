@@ -14,10 +14,16 @@
 
 #homepage .section1-image {
   display: block;
-  max-width: 43rem;
-  max-height: 31rem;
+  max-width: 25rem;
+  max-height: 15rem;
   width: auto;
   height: auto;
+}
+@media (min-width: 1024px) {
+  #homepage .section1-image {
+    max-width: 43rem;
+    max-height: 31rem;
+  }
 }
 
 #homepage .section2-image {
@@ -27,6 +33,7 @@
   height: auto;
   object-fit: cover;
   object-position: center;
+  margin: 0.25rem;
 }
 
 #homepage .section3-image {

@@ -22,8 +22,8 @@ router.get('/zimmer', (req, res) => {
 
 const PRICE_DESCRIPTION = 'Transparente Preise und Hausregeln für Ihren Aufenthalt im Lieblingsnest Detmold. Informieren Sie sich über unsere fairen Konditionen und einen reibungslosen Aufenthalt.';
 
-router.get('/preise/regeln', (req, res) => {
-  res.render('price', {
+router.get('/regeln', (req, res) => {
+  res.render('rules', {
     title: 'Preise und Regeln | Lieblingsnest Detmold',
     description: PRICE_DESCRIPTION,
   });
@@ -47,26 +47,12 @@ router.get('/kontakt', (req, res) => {
   });
 });
 
-// router.get('/kalendar', (req, res) => {
-//   res.render('calendar', {
-//     title: 'Kalender | Lieblingsnest Detmold',
-//     description: ''
-//   })
-// };
-
 const RATING_DESCRIPTION = 'Lesen Sie die Bewertungen unserer Gäste im Lieblingsnest Detmold. Ihre Meinung ist uns wichtig! Teilen Sie Ihre Erfahrungen und helfen Sie anderen bei der Wahl ihrer Unterkunft.';
 
-router.get('/bewertungen', (req, res) => {
+router.get('/urkunde-dtv', (req, res) => {
   res.render('rating', {
     title: 'Bewertungen | Lieblingsnest Detmold',
     description: RATING_DESCRIPTION,
-  });
-});
-
-router.get('/partner', (req, res) => {
-  res.render('partner', {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
   });
 });
 
